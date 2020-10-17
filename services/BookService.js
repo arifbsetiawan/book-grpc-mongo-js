@@ -104,7 +104,7 @@ const BookService = {
                 return callback(err400());
 
             return callback(null, {
-                message: 'Book Updated',
+                message: 'Book Deleted',
             });
             
         } catch (error) {
