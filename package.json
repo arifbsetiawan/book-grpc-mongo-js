@@ -1,0 +1,38 @@
+{
+  "name": "book-grpc-mongo-js",
+  "version": "1.0.0",
+  "description": "Simple gRPC & MongoDB Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifbsetiawan/book-grpc-mongo-js.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "grpc",
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "arifbsetiawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arifbsetiawan/book-grpc-mongo-js/issues"
+  },
+  "homepage": "https://github.com/arifbsetiawan/book-grpc-mongo-js#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@grpc/proto-loader": "^0.5.5",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.9",
+    "pino": "^6.7.0",
+    "pino-pretty": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

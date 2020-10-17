@@ -1,0 +1,42 @@
+version: '3'
+services:
+    app:
+        container_name: book-grpc-mongo-js
+        restart: unless-stopped
+        build: .
+        image: book-grpc-mongo-js
+        working_dir: /home/node/app
+        volumes: 
+            - ./config:/home/node/app/config
+            - ./models:/home/node/app/models
+            - ./protos:/home/node/app/protos
+            - ./services:/home/node/app/services
+            - ./utils:/home/node/app/utils
+        environment: 
+            - APP_NAME=book-grpc-mongo-js
+            - APP_URI=0.0.0.0
+            - APP_PORT=17597
+            - MONGO_URI=mongodb://root:password@book-grpc-mongo-js-database:27017/book-grpc?authSource=admin
+        networks: 
+            - book-grpc-mongo-js
+        depends_on: 
+            - database
+        links: 
+            - database
+        ports: 
+            - 8000:17597
+    database:
+        container_name: book-grpc-mongo-js-database
+        image: mongo:4.2.9
+        environment: 
+            - MONGO_INITDB_DATABASE=book-grpc
+            - MONGO_INITDB_ROOT_USERNAME=root
+            - MONGO_INITDB_ROOT_PASSWORD=password
+        networks: 
+            - book-grpc-mongo-js
+        ports: 
+            - 27017:27017
+
+networks: 
+    book-grpc-mongo-js:
+        driver: bridge
