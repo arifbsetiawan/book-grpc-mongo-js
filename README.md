@@ -16,15 +16,15 @@ docker-compose up --build -d
 >Response:
 ```json
 {
-    'message': 'String',
-    'books': [
+    "message": "String",
+    "books": [
         {
-            'id': 'String',
-            'title': 'String',
-            'author': {
-                'name': 'String',
-                'phone': 'String',
-                'address': 'String'
+            "id": "String",
+            "title": "String",
+            "author": {
+                "name": "String",
+                "phone": "String",
+                "address": "String"
             }
         }
     ]
@@ -35,20 +35,20 @@ docker-compose up --build -d
 >Request:
 ```json
 {
-    'id': 'String'
+    "id": "String"
 }
 ````
 >Response:
 ```json
 {
-    'message': 'String',
-    'book': {
-        'id': 'String',
-        'title': 'String',
-        'author': {
-            'name': 'String',
-            'phone': 'String',
-            'address': 'String'
+    "message": "String",
+    "book": {
+        "id": "String",
+        "title": "String",
+        "author": {
+            "name": "String",
+            "phone": "String",
+            "address": "String"
         }
     }
 }
@@ -58,23 +58,23 @@ docker-compose up --build -d
 >Request:
 ```json
 {
-    'title': 'String',
-    'name': 'String',
-    'phone': 'String',
-    'address': 'String'
+    "title": "String",
+    "name": "String",
+    "phone": "String",
+    "address": "String"
 }
 ````
 >Response:
 ```json
 {
-    'message': 'String',
-    'book': {
-        'id': 'String',
-        'title': 'String',
-        'author': {
-            'name': 'String',
-            'phone': 'String',
-            'address': 'String'
+    "message": "String",
+    "book": {
+        "id": "String",
+        "title": "String",
+        "author": {
+            "name": "String",
+            "phone": "String",
+            "address": "String"
         }
     }
 }
@@ -84,24 +84,24 @@ docker-compose up --build -d
 >Request:
 ```json
 {
-    'id': 'String',
-    'title': 'String',
-    'name': 'String',
-    'phone': 'String',
-    'address': 'String'
+    "id": "String",
+    "title": "String",
+    "name": "String",
+    "phone": "String",
+    "address": "String"
 }
 ````
 >Response:
 ```json
 {
-    'message': 'String',
-    'book': {
-        'id': 'String',
-        'title': 'String',
-        'author': {
-            'name': 'String',
-            'phone': 'String',
-            'address': 'String'
+    "message": "String",
+    "book": {
+        "id": "String",
+        "title": "String",
+        "author": {
+            "name": "String",
+            "phone": "String",
+            "address": "String"
         }
     }
 }
@@ -111,13 +111,13 @@ docker-compose up --build -d
 >Request:
 ```json
 {
-    'id': 'String'
+    "id": "String"
 }
 ````
 >Response:
 ```json
 {
-    'message': 'String',
+    "message": "String",
 }
 ```
 
